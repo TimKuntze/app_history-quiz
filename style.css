@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 30px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 124px;
+    background-image: url(img/history_neu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1;
+    padding: 30px;
+    padding-left: 64px;
+    margin-bottom: 64px;
+}
+
+.footer-custom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 30px;
+    color: white;
+}
+
+.btn-custom {
+    border: 1px solid white;
+}
+
+.progress-bar {
+    background-color: #cc0200;
+}
+
+.question-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-buttons button {
+    width: 48%;
+    height: 68px;
+}
+
+.quizdonecss {
+    margin-top: 100px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizdonecss img{
+    width: 350px; 
+    
+}

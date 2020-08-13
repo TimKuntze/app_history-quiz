@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>QuizzApp</title>
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js"></script>
+</head>
+
+<body onload="nextQuestion()">
+
+
+  <nav class="navbar navbar-custom navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="img/question_red.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+      Time for some History!
+    </a>
+  </nav>
+
+  <div id="quizcontainer">
+    <h1>So, let's play the Ultimate History Quizz</h1>
+
+    <div class="alert alert-success d-none" id="correct-answer" role="alert">
+      Your answer is correct!!
+    </div>
+    <div class="alert alert-danger d-none" id="wrong-answer" role="alert">
+      Your answer is wrong...
+    </div>
+
+    <div class="card">
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25"
+          aria-valuemin="0" aria-valuemax="100">0%</div>
+      </div>
+      <div class="card-body" id="question">
+        Question will come here
+      </div>
+    </div>
+    <div class="mt-4">
+      <div class="question-buttons mt-4">
+        <button class="btn btn-dark btn-custom" id="answer1" onclick="answer(1)">Answer A</button>
+        <button class="btn btn-dark btn-custom" id="answer2" onclick="answer(2)">Answer B</button>
+      </div>
+      <div class="question-buttons mt-4">
+        <button class="btn btn-dark btn-custom" id="answer3" onclick="answer(3)">Answer C</button>
+        <button class="btn btn-dark btn-custom" id="answer4" onclick="answer(4)">Answer D</button>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <button onclick="nextQuestion()" id="next" class="btn btn-light d-none">Next question</button>
+    </div>
+  </div>
+
+  <div id="quizdone" class="quizdonecss d-none">
+    <h1>Congratulations, you made it through the quiz! </h1>
+
+    <img src="img/warrior.png">
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small bg-dark footer-custom">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 copyright-custom">© 2020 Copyright: Tim
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+
+</html>
